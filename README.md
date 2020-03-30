@@ -74,4 +74,4 @@ And below is an example of what a single line of data in a log file, 2018-11-22-
 }
 ```
 ## Working DAG
-![](images/DAG.JPG)
+![](images/DAG.jpg)
