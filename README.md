@@ -15,46 +15,7 @@ The project involves the following two datasets hosted on S3:
 2. Song data: s3://udacity-dend/song_data
 
 ## Project Files Structure
-airflow
-|
-│───create_tables.sql
-│   
-├───dags
-│   │   udac_example_dag.py
-│   │   
-│   └───__pycache__
-│           udac_example_dag.py
-│           
-├───images
-│       DAG.jpg
-│       
-└───plugins
-    │   __init__.py
-    │   
-    ├───helpers
-    │   │   sql_queries.py
-    │   │   __init__.py
-    │   │   
-    │   └───__pycache__
-    │           sql_queries.py
-    │           __init__.py
-    │           
-    ├───operators
-    │   │   data_quality.py
-    │   │   load_dimension.py
-    │   │   load_fact.py
-    │   │   stage_redshift.py
-    │   │   __init__.py
-    │   │   
-    │   └───__pycache__
-    │           data_quality.py
-    │           load_dimension.py
-    │           load_fact.py
-    │           stage_redshift.py
-    │           __init__.py
-    │           
-    └───__pycache__
-            __init__.py
+![](images/folder_structure.JPG)
 
 ### Song Dataset
 The first dataset is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are filepaths to two files in this dataset.
@@ -112,3 +73,5 @@ And below is an example of what a single line of data in a log file, 2018-11-22-
   "userId": "15"
 }
 ```
+## Working DAG
+![](images/DAG.JPG)
