@@ -75,3 +75,16 @@ And below is an example of what a single line of data in a log file, 2018-11-22-
 ```
 ## Working DAG
 ![](images/DAG.jpg)
+
+The DAG is connfigured with the following default parameters:
+* The DAG does not have dependencies on past runs
+* On failure, the task are retried 3 times
+* Retries happen every 5 minutes
+* Catchup is turned off
+* Do not email on retry
+
+
+## How to Run
+1. Run `/opt/airflow.start.sh` to start the Airflow server
+2. Click on `Access Airflow` button to access the Airflow UI
+3. Toggle the DAG `On` to initiate processing
